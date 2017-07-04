@@ -1,19 +1,39 @@
 $(function () {
+
 	//加载fullpage
 	$('#dowebok').fullpage({
-		sectionsColor: ['#1bbc9b', '#F4F4F4', '#26B1B6', '#fb6d7e', '#4dd0e1', '#e8b118'],
+		sectionsColor: ['#4dd0e1', '#22c3aa', '#26B1B6', '#fb6d7e', '#4dd0e1', '#e8b118'],
 		navigation: true,
 		afterLoad: loadAnimation,
 		onLeave: leaveAnimation,
 	});
 	
+	$("#page1-model").click(function () {
+		$('.model').fadeIn();
+		$('.model ul li').slideDown();
+		event.stopPropagation();
+	});
 	
+//	$('.page2 ul').on('click', 'h4', function () {
+//		console.log($(event.target).html());
+//		$('.page2 .model').fadeIn();
+//		event.stopPropagation();
+//	});
 	
+	$(document).click(function(){  
+       $('.model').fadeOut();
+       $('.model ul li').slideUp();
+    });  
+    
 	$('.page1 .container img').delay(800).animate({'opacity': '1'}, 500);
-	$('.page1 .container p, .page1 .container h1, .page1 .container h3').animate({'margin-top': '20px'}, 800);
-
+	$('.page1 .container p, .page1 .container h1').animate({'margin-top': '20px'}, 800);
+	$('.page1 .container h3').animate({'margin-top': '5px'}, 800);
 	//加载动画
 	function loadAnimation (anchorLink, index) {
+		
+	}
+	
+	function leaveAnimation (anchorLink, index) {
 		var time = 1200;
 			
 		if (index === 2) {
@@ -39,9 +59,11 @@ $(function () {
 		if (index === 5) {
 			var s = $('.page5 .an-hide');
 			for (var i = 0; i < s.length; i ++) {
-				var random = parseInt(1500 * Math.random());
+				var random = parseInt(3000 * Math.random());
 				$(s[i]).animate({'opacity': '1'}, random);
+				$('.page5 .an-down').animate({'margin-top': '0%'}, random);
 			}
+			
 		}
 		
 		if (index === 6) {
@@ -51,9 +73,6 @@ $(function () {
 			shake($('.page6 .an-hide'));
 		}
 		return ;
-	}
-	
-	function leaveAnimation (anchorLink, index) {
 	}
 	
 	
