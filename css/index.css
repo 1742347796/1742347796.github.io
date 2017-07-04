@@ -104,10 +104,10 @@ p {
 
 }
 .an-left {
-	margin-left: 115%;
+	margin-left: 120%;
 }
 .an-right {
-	margin-right: 115%;
+	margin-right: 120%;
 }
 .an-up {
 	margin-bottom: 115%;
@@ -131,7 +131,9 @@ p {
 .page4 {
 	color: #FFFFFF;
 }
-
+.page4 .row {
+	margin: 0;	
+}
 .page4 img {
 	border-radius: 50%;
 }
