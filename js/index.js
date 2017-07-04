@@ -14,7 +14,7 @@ $(function () {
 
 	//加载动画
 	function loadAnimation (anchorLink, index) {
-		let time = 1200;
+		var time = 1200;
 			
 		if (index === 2) {
 			
@@ -37,9 +37,9 @@ $(function () {
 		}
 		
 		if (index === 5) {
-			let s = $('.page5 .an-hide');
-			for (let i = 0; i < s.length; i ++) {
-				let random = parseInt(1500 * Math.random());
+			var s = $('.page5 .an-hide');
+			for (var i = 0; i < s.length; i ++) {
+				var random = parseInt(1500 * Math.random());
 				$(s[i]).animate({'opacity': '1'}, random);
 			}
 		}
@@ -62,7 +62,7 @@ $(function () {
 //抖动效果
 function shake (dom) {
 		
-	let timeShake = 100;
+	var timeShake = 100;
 		
 	$(dom).animate({'margin': '5px 40px 0 0'}, timeShake);
 	$(dom).animate({'margin': '5px 0 0 40px'}, timeShake);
