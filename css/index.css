@@ -92,27 +92,28 @@ p {
 	left: 0%;
 	width: 100%;
 	min-width: 350px;
+	padding: 30px 20px 30px 0;
 	overflow: hidden;
-	padding: 40px;;
 	background: #EEEEEE;
 	box-shadow: 0 16px 28px 0 rgba(0,0,0,.22),0 25px 55px 0 rgba(0,0,0,.21);
 	display: none;
+	background: rgba(258,258,258,0.92);
 }
 .model .model-title {
 	margin: 0 0 20px 20px;
 	color: #666666;
-	font-size: 26px;
+	font-size: 20px;
 }
 .model ul {
 	list-style: none; 
 	color: #36b5c5;
-	font-size: 16px;
+	font-size: 12px;
 }
 .model ul li{
-	margin: 10px 0 0 0;
+	margin: 5px 0 0 0;
 	display: none;
 }
-#page1-model {
+#page1-button {
 	margin: 40px 0 0 0;
 	width: 30%;
 	background: #4dd0e1;
@@ -122,7 +123,7 @@ p {
 	animation: shadow-hide 0.5s 1;
 	animation-fill-mode:forwards; 
 }
-#page1-model:hover {
+#page1-button:hover {
 	animation: shadow 0.5s 1;
 	animation-fill-mode:forwards; 
 }
@@ -146,6 +147,14 @@ p {
 	line-height: 40px;
 	padding-left: 5px;
 	overflow: hidden;
+	
+	animation: shadow-hide 0.5s 1;
+	animation-fill-mode:forwards; 
+}
+.skill h4:hover {
+	color: #00463B;
+	animation: shadow 0.5s 1;
+	animation-fill-mode:forwards; 
 }
 .skill-tech-1 {
 	background-color: #d6efff;
@@ -231,7 +240,7 @@ p {
 }
 .page5 .page-title h3{
 	color: #C1EDF2;
-}
+}a
 .study {
 	text-align: center;
 }
@@ -254,6 +263,9 @@ p {
 }
 .page1 .logo {
 	width: auto;
+}
+#page1-button {
+	font-size: 16px;
 }
 .study-label {
     /*margin: 10px 0 0 10px;*/
@@ -290,6 +302,15 @@ p {
 .model {
 	left: 25%;
 	width: 50%;
+	padding: 40px;
+	
+}
+.model .model-title {
+	font-size: 26px;
+}
+.model ul li{
+	margin: 10px 0 0 0;
+	font-size: 16px;
 }
 
 }
@@ -303,6 +324,9 @@ h3 {
 }
 p {
 	font-size: 18px;;
+}
+#page1-button {
+	font-size: 18px;
 }
 .page3-tab {
 	padding: 20px;
